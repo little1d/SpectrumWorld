@@ -4,18 +4,18 @@ This is an academic paper project page template.
 
 Example project pages built using this template are:
 
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+- <https://horwitz.ai/probex>
+- <https://vision.huji.ac.il/probegen>
+- <https://horwitz.ai/mother>
+- <https://horwitz.ai/spectral_detuning>
+- <https://vision.huji.ac.il/ladeda>
+- <https://vision.huji.ac.il/dsire>
+- <https://horwitz.ai/podd>
+- <https://dreamix-video-editing.github.io>
+- <https://horwitz.ai/conffusion>
+- <https://horwitz.ai/3d_ads/>
+- <https://vision.huji.ac.il/ssrl_ad>
+- <https://vision.huji.ac.il/deepsim>
 
 ## Start using the template
 
@@ -26,6 +26,33 @@ To edit the websites contents edit the `index.html` file. It contains different 
 
 **IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
 
+## GitHub Pages Deployment
+
+This project is configured with GitHub Actions for automatic deployment to GitHub Pages.
+
+### Setup Instructions
+
+1. **Enable GitHub Pages:**
+   - Go to your repository settings
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "GitHub Actions"
+
+2. **Automatic Deployment:**
+   - The website will automatically deploy when you push to the `main` or `master` branch
+   - You can also manually trigger deployment from the "Actions" tab
+
+3. **Custom Domain (Optional):**
+   - In the Pages settings, you can add a custom domain
+   - Add a `CNAME` file to the root directory with your domain name
+
+### Deployment Workflow
+
+The `.github/workflows/deploy.yml` file handles the deployment process:
+
+- Triggers on push to main/master branch
+- Uses GitHub's official Pages deployment action
+- Deploys the entire project directory as a static site
+
 ## Components
 
 - Teaser video
@@ -35,7 +62,7 @@ To edit the websites contents edit the `index.html` file. It contains different 
 - PDF Poster
 - Bibtex citation
 
-## Tips:
+## Tips
 
 - The `index.html` file contains comments instructing you what to replace, you should follow these comments.
 - The `meta` tags in the `index.html` file are used to provide metadata about your paper
