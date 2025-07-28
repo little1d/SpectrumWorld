@@ -26,7 +26,7 @@
 
 
   <title>SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/avator.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -46,18 +46,22 @@
 
 <body>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-narrow">
+            <figure class="image is-128x128">
+              <img src="static/images/avator.png" alt="Project Avatar" style="border-radius: 10px;" />
+            </figure>
+          </div>
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">SpectrumWorld: Artificial Intelligence Foundation for Spectroscopy
             </h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Anonymous Authors,
+                Anonymous Authors
                 <span class="author-block">
                 </span>
             </div>
@@ -67,9 +71,31 @@
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
-            <script type="text/plain" class="comment-block">
             <div class="column has-text-centered">
               <div class="publication-links">
+                <!-- SpectrumLab Anonymous Repository -->
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/SpectrumLab-8C4E/README.md" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>SpectrumLab (Anonymous)</span>
+                  </a>
+                </span>
+
+                <!-- SpectrumAnnotator Anonymous Repository -->
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/SpectrumAnnotator/README.md" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>SpectrumAnnotator (Anonymous)</span>
+                  </a>
+                </span>
+
+                <script type="text/plain" class="comment-block">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
@@ -141,7 +167,7 @@
   <!-- End teaser video -->
   </script>
 
-  
+
   <!-- Paper abstract -->
   <section class="section hero is-light">
     <div class="container is-max-desktop">
@@ -168,8 +194,347 @@
   </section>
   <!-- End paper abstract -->
 
+  <!-- SpectrumBench Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-2">SpectrumBench</h2>
+        </div>
+      </div>
+
+      <!-- Task Distribution -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h3 class="title is-4">Task Distribution</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered" style="justify-content: center;">
+        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
+          <figure class="image" style="margin-bottom: 0.5rem;">
+            <img src="static/images/task_distribution.png" alt="Task Distribution Overview" style="max-width: 300px;" />
+          </figure>
+          <p class="has-text-centered">
+            <strong>Task Distribution Overview</strong>
+          </p>
+        </div>
+        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
+          <figure class="image" style="margin-bottom: 0.5rem;">
+            <img src="static/images/pie_chart_v2.jpg" alt="Task Distribution Pie Chart" style="max-width: 300px;" />
+          </figure>
+          <p class="has-text-centered">
+            <strong>Task Distribution Pie Chart</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sample Benchmark -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+      <div class="column is-full">
+        <h3 class="title is-4">Multi-layered Benchmark(Signal, Perception, Semantic, Generation)</h3>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+        <div id="benchmark-carousel" class="carousel results-carousel" style="text-align: center;">
+          <div class="item">
+            <img src="static/images/signal_level.png" alt="Signal Level Benchmark" />
+            <h2 class="subtitle has-text-centered">
+              Signal Level Benchmark
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/perception_level.png" alt="Perception Benchmark" />
+            <h2 class="subtitle has-text-centered">
+              Perception Benchmark
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/semantic_level.png" alt="Semantic Benchmark" />
+            <h2 class="subtitle has-text-centered">
+              Semantic Benchmark
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Curation Pipeline -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+      <div class="column is-full">
+        <h3 class="title is-4">Data Curation Pipeline</h3>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image">
+          <img src="static/images/data_curation_v2.png" alt="Data Curation Pipeline" />
+        </figure>
+        <!-- <p class="has-text-centered" style="margin-top: 1rem;">
+          <strong>Data Curation Pipeline Overview</strong>
+        </p> -->
+      </div>
+    </div>
+
+    <!-- Experiment Results -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+      <div class="column is-full">
+        <h3 class="title is-4">Experiment Results</h3>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <figure class="image">
+          <img src="static/images/results.png" alt="Experiment Results" />
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- End SpectrumBench Section -->
+
+  <!-- SpectrumLab Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-2">SpectrumLab</h2>
+        </div>
+      </div>
+
+      <!-- Framework -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h3 class="title is-4">Framework Overview</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <figure class="image">
+            <img src="static/images/spectrumlab.png" alt="SpectrumLab Framework" />
+          </figure>
+        </div>
+      </div>
+
+      <!-- How to Use -->
+      <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+        <div class="column is-full">
+          <h3 class="title is-4">How to Use</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-left">
+            <pre><code class="language-python">from spectrumlab.benchmark.signal_group import SignalGroup
+from spectrumlab.models import GPT4o
+from spectrumlab.evaluator.choice_evaluator import ChoiceEvaluator
+
+# 1. Load data
+signal_group = SignalGroup("data")
+data = signal_group.get_data_by_subcategories(["Spectrum Type Classification"])
+
+# 2. Initialize model and evaluator
+model = GPT4o()
+evaluator = ChoiceEvaluator()
+
+# 3. Run evaluation
+results = evaluator.evaluate(data_items=data, model=model, save_path="./evaluation_results")</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Generated Examples -->
+      <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+        <div class="column is-full">
+          <h3 class="title is-4">Generated Examples</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered is-vcentered" style="justify-content: center;">
+        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
+          <figure class="image" style="margin-bottom: 0.5rem;">
+            <img src="static/images/example1.png" alt="Example 1" style="max-width: 300px;" />
+          </figure>
+          <p class="has-text-centered">
+            <strong>Example 1: Structure Elucidation</strong>
+          </p>
+        </div>
+        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
+          <figure class="image" style="margin-bottom: 0.5rem;">
+            <img src="static/images/example2.png" alt="Example 2" style="max-width: 300px;" />
+          </figure>
+          <p class="has-text-centered">
+            <strong>Example 2: Structure Elucidation</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End SpectrumLab Section -->
+
+  <!-- SpectrumAnnotator Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-2">SpectrumAnnotator</h2>
+        </div>
+      </div>
+
+      <!-- Framework -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h3 class="title is-4">Framework Overview</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <figure class="image">
+            <img src="static/images/spectrumannotator.png" alt="SpectrumAnnotator Framework" />
+          </figure>
+        </div>
+      </div>
+
+      <!-- How to Use -->
+      <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+        <div class="column is-full">
+          <h3 class="title is-4">How to Use</h3>
+        </div>
+      </div>
+
+      <!-- Step 1: Configuration -->
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <h4 class="title is-5">Step 1: Configure the Generator</h4>
+          <div class="content has-text-left">
+            <pre><code class="language-yaml">dataset_path: seed_datasets/molpuzzle/meta_data.json
+generator_type: benchmark
+generator_config:
+  prompt_templates:
+    structure_elucidate:
+      template: |
+        This is a structure elucidation task.
+
+        You are given one or more spectra for an unknown molecule.
+        Your goal is to deduce the most likely molecular structure (such as SMILES, 2D/3D structure, or key substructures) that is consistent with the provided spectral data.
+        You may need to assemble fragments, complete partial scaffolds, or rank plausible candidate structures based on the spectra.
+        Please focus on designing questions that require the examinee to infer or assemble the full or partial structure from the spectral features.
+        In your JSON output, include a field "selected_spectrum_type" to indicate which spectrum you used.
+
+        Please answer in the following JSON format:
+        {{
+          "selected_spectrum_type": "MASS",
+          "question": "Given the mass spectrum of an unknown compound, predict the most likely molecular structure (SMILES) consistent with the observed fragments.",
+          "choices": ["CCO", "c1ccccc1", "CC(=O)O", "CCN"],
+          "answer": "CCO"
+        }}
+
+        Example 1:
+        {{
+          "selected_spectrum_type": "H-NMR",
+          "question": "Given the ¹H and ¹³C NMR spectra of a compound, identify the most likely substructures present. Use this information to assemble and rank plausible candidate isomers for the full molecule.",
+          "choices": ["Benzene ring", "Cyclohexane", "Ester group", "Alkyne group"],
+          "answer": "Benzene ring"
+        }}
+
+        Example 2:
+        {{
+          "selected_spectrum_type": "MASS",
+          "question": "Given multiple fragment-level features inferred from NMR and MS spectra, assemble the most likely full molecular structure by combining fragments in a chemically consistent way.",
+          "choices": ["CCCO", "CCOC", "CCN", "CNC"],
+          "answer": "CCCO"
+        }}
+      num_choices: 4
+model_type: internvl
+model_config:
+  api_key: ${INTERNVL_API_KEY}
+  base_url: ${INTERNVL_BASE_URL}
+  model_name: ${INTERNVL_MODEL_NAME}
+  max_seq_len: 4096
+num_samples: 30
+output_path: output/benchmark.json
+verbose: true
+max_retries: 3</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Execution -->
+      <div class="columns is-centered" style="margin-top: 2rem;">
+        <div class="column is-four-fifths">
+          <h4 class="title is-5">Step 2: Run the Generator</h4>
+          <div class="content has-text-left">
+            <pre><code class="language-bash">python generate.py --config config.yaml --question-type structure_elucidate --samples 50</code></pre>
+            <p><strong>Available Parameters:</strong></p>
+            <ul>
+              <li><code>--config</code>: Path to benchmark config YAML/JSON file (required)</li>
+              <li><code>--question-type</code>: Question type to generate, e.g., "structure_elucidate" (required)</li>
+              <li><code>--samples</code>: Number of samples to generate (optional, overrides config)</li>
+            </ul>
+            <p><strong>Example Output:</strong></p>
+            <pre><code>✅ Generation finished. 30 samples generated.
+Results saved to: output/benchmark.json</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Generated Examples -->
+      <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+        <div class="column is-full">
+          <h3 class="title is-4">Generated Examples</h3>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content has-text-left">
+            <h4 class="title is-5">Demo 1: Mass Spectrum Structure Prediction</h4>
+            <pre><code class="language-json">{
+  "selected_spectrum_type": "MASS",
+  "question": "Given the mass spectrum of an unknown compound, predict the most likely molecular structure (SMILES) consistent with the observed fragments.",
+  "choices": [
+    "ClC1=CC=CC2=CC=CC=C12",
+    "CCl2CC1=CC=CC1",
+    "CCl2C1=CC=CC1",
+    "CC1=CC=CC=CC1Cl"
+  ],
+  "answer": "ClC1=CC=CC2=CC=CC=C12",
+  "image_path": {
+    "MASS": "seed_datasets/molpuzzle/MASS/MOL_0043.jpg"
+  }
+}</code></pre>
+
+            <h4 class="title is-5" style="margin-top: 2rem;">Demo 2: Fragmentation Pattern Analysis</h4>
+            <pre><code class="language-json">{
+  "selected_spectrum_type": "MASS",
+  "question": "Given the mass spectrum with peaks at m/z 39, 51, and 63, deduce the molecular structure that best fits these fragmentation patterns.",
+  "choices": [
+    "C1=CC=C(C=C1)N=C=O",
+    "CCOC(=O)C=O",
+    "CC(CN)C=O",
+    "CC(N)C=O"
+  ],
+  "answer": "C1=CC=C(C=C1)N=C=O",
+  "image_path": {
+    "MASS": "seed_datasets/molpuzzle/MASS/MOL_0170.jpg"
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End SpectrumAnnotator Section -->
 
   <!-- Image carousel -->
+  <script type="text/plain" class="comment-block">
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
@@ -178,7 +543,7 @@
             <!-- Your image here -->
             <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
             <h2 class="subtitle has-text-centered">
-              First image description.
+              Signal Level Benchmark Example.
             </h2>
           </div>
           <div class="item">
@@ -207,8 +572,7 @@
     </div>
   </section>
   <!-- End image carousel -->
-
-
+  </script>
 
   <script type="text/plain" class="comment-block">
   <!-- Youtube video -->
@@ -264,9 +628,6 @@
   </section>
   <!-- End video carousel -->
   </script>
-
-
-
 
   <script type="text/plain" class="comment-block">
   <!-- Paper poster -->
