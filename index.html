@@ -367,23 +367,53 @@ results = evaluator.evaluate(data_items=data, model=model, save_path="./evaluati
           <h3 class="title is-4">Generated Examples</h3>
         </div>
       </div>
-
-      <div class="columns is-centered is-vcentered" style="justify-content: center;">
-        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
-          <figure class="image" style="margin-bottom: 0.5rem;">
-            <img src="static/images/example1.png" alt="Example 1" style="max-width: 300px;" />
-          </figure>
-          <p class="has-text-centered">
-            <strong>Example 1: Structure Elucidation</strong>
-          </p>
-        </div>
-        <div class="column is-narrow" style="display: flex; flex-direction: column; align-items: center;">
-          <figure class="image" style="margin-bottom: 0.5rem;">
-            <img src="static/images/example2.png" alt="Example 2" style="max-width: 300px;" />
-          </figure>
-          <p class="has-text-centered">
-            <strong>Example 2: Structure Elucidation</strong>
-          </p>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-left">
+            <pre><code class="language-json">{
+  "selected_spectrum_type": "MASS",
+  "question": "Given the mass spectrum of an unknown compound, predict the most likely molecular structure (SMILES) consistent with the observed fragments.",
+  "choices": [
+    "ClC1=CC=CC2=CC=CC=C12",
+    "CCl2CC1=CC=CC1",
+    "CCl2C1=CC=CC1",
+    "CC1=CC=CC=CC1Cl"
+  ],
+  "answer": "ClC1=CC=CC2=CC=CC=C12",
+  "image_path": {
+    "MASS": "seed_datasets/molpuzzle/MASS/MOL_0043.jpg"
+  }
+},
+{
+  "selected_spectrum_type": "MASS",
+  "question": "Given the mass spectrum with peaks at m/z 39, 51, and 63, deduce the molecular structure that best fits these fragmentation patterns.",
+  "choices": [
+    "C1=CC=C(C=C1)N=C=O",
+    "CCOC(=O)C=O",
+    "CC(CN)C=O",
+    "CC(N)C=O"
+  ],
+  "answer": "C1=CC=C(C=C1)N=C=O",
+  "image_path": {
+    "MASS": "seed_datasets/molpuzzle/MASS/MOL_0170.jpg"
+  }
+},
+{
+  "selected_spectrum_type": "MASS",
+  "question": "Given the mass spectrum of an unknown compound with a molecular formula of C4H8O2, identify the most likely molecular structure (SMILES) consistent with the observed fragmentation pattern.",
+  "choices": [
+    "CCOC(=O)O",
+    "CCOCCO",
+    "C1COCOC1",
+    "CCCOC"
+  ],
+  "answer": "C1COCOC1",
+  "image_path": {
+    "MASS": "seed_datasets/molpuzzle/MASS/MOL_0016.jpg"
+  }
+}
+</code></pre>
+          </div>
         </div>
       </div>
     </div>
